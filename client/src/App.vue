@@ -2,10 +2,10 @@
   <v-app>
     <v-app-bar
         app
-        color="primary"
+        color="#9b28ff"
         dark
     >
-      <v-toolbar-title>Jitsi Keycloak</v-toolbar-title>
+      <v-toolbar-title>Meetings By GoEasyCare</v-toolbar-title>
       <v-spacer></v-spacer>
       <span>{{ profile.firstName }} {{ profile.lastName }}</span>
       <v-tooltip bottom>
@@ -22,7 +22,7 @@
         <v-row>
           <v-col>
             <v-card>
-              <v-card-title>Login</v-card-title>
+              <v-card-title li class="dark grey--text">Login</v-card-title>
               <v-card-text>
                 <v-form v-model="roomValid">
                   <v-row>
@@ -41,7 +41,7 @@
                       <v-text-field label="Room" v-model="room" :rules="roomRules"></v-text-field>
                     </v-col>
                   </v-row>
-                  <v-btn color="primary" v-on:click="openJitsi" :disabled="!roomValid">Open Jitsi</v-btn>
+                  <v-btn color="#9b28ff" li class="white--text" v-on:click="openJitsi" :disabled="!roomValid">Start Conference</v-btn>
                 </v-form>
               </v-card-text>
             </v-card>
